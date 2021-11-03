@@ -1,0 +1,4 @@
+FROM spark-base
+
+RUN mkdir logs
+CMD bin/spark-class org.apache.spark.deploy.master.Master >> logs/spark-master.log
